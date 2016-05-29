@@ -54,6 +54,7 @@ $ npm start
 ```sh
 http://localhost:3000/
 ```
+  - A page that states:  "MEAN stack works!" and you're good!
 
 ### Easy Deploy with Heroku
 Ensure that you have a valid, working Heroku repository.  Copy/paste/clone this repo into it.  Then:
