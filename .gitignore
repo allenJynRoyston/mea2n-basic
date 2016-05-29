@@ -1,0 +1,18 @@
+OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# PACKAGES #
+######################
+node_modules/
+bower_components/
+public/node_modules/
+public/bower_components/
+
+# FILES #
+######################

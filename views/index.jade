@@ -1,0 +1,81 @@
+doctype html
+html
+  head
+  
+    // meta data
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no")
+    meta(name="description" content="")
+    
+    // for angular routing - leave as is
+    base(href="/")
+    
+    // title
+    if enviroment=="development"   
+      title #{title} (#{enviroment})
+    if enviroment!="development"   
+      title #{title}
+    
+    // css
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    
+    // production 
+    if enviroment=="production" 
+    
+      // system has to be loaded in this order
+      script(src='node_modules/systemjs/dist/system.src.js')
+      script(src='systemjs.config.js')
+      
+      // load other scripts here
+      script.
+        function loadScript(src) {
+          var element = document.createElement("script");
+          element.src = src;
+          document.body.appendChild(element);
+        }
+        // Add a script element as a child of the body
+        function downloadJSAtOnload() {        
+          loadScript("node_modules/core-js/client/shim.min.js");
+          loadScript("node_modules/zone.js/dist/zone.js");
+          loadScript("node_modules/reflect-metadata/Reflect.js");
+        }
+        // Check for browser support of event handling capability
+        if (window.addEventListener)
+        window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+        window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;
+
+    
+    // development
+    if enviroment=="development"   
+    
+      script(src='node_modules/core-js/client/shim.min.js')
+      script(src='node_modules/zone.js/dist/zone.js')
+      script(src='node_modules/reflect-metadata/Reflect.js')
+      script(src='node_modules/systemjs/dist/system.src.js')
+      script(src='systemjs.config.js')
+      
+      // livereload          
+      script(src='//localhost:35729/livereload.js')  
+    
+  body
+    // angular 2 renders here
+    my-app
+      p Loading...
+  
+  // init and declare globals
+  script(type='text/javascript').
+    System.import('app').catch(function(err){ console.error(err); });  
+    
+  script(type='text/javascript').
+    _root = {
+      globals: {
+        enviroment: "#{enviroment}",
+        isMobile: "#{isMobile}",
+        isIphone: "#{isIphone}",
+        isIpad: "#{isIpad}",
+        isAndroid: "#{isAndroid}",
+        userAgent: "#{userAgent}"
+      }
+    }
+    
