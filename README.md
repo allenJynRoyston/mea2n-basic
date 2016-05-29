@@ -50,7 +50,10 @@ $ grunt
 ```sh
 $ npm start
 ```
-
+  - Open up a browser of your choice (Chrome/Firefox/etc) and enter the url:  
+```sh
+http://localhost:3000/
+```
 
 ### Easy Deploy with Heroku
 Ensure that you have a valid, working Heroku repository.  Copy/paste/clone this repo into it.  Then:
