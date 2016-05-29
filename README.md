@@ -11,7 +11,7 @@ Install includes:
   - File watching and automatic browser refresh (if grunt is running)
 
 Express side:
-  - Built in mobile/iPad/OS user detection (accessible throught the entire site)
+  - Built in mobile/iPad/OS user detection (accessible throughtout the entire site)
   - Quick API and routing setup
   - Jade templating
   
