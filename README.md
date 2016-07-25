@@ -1,7 +1,7 @@
 # Express / Angular 2 Easy setup
 
 ### NEW FEATURES!
-July 25 2016:  Routing example included!
+July 25 2016:  Routing included by default.
 
 ### Why?
 
