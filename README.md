@@ -1,6 +1,7 @@
 # Express / Angular 2 Easy setup
 
 ### NEW FEATURES!
+
 July 25 2016:  Routing included by default.
 
 ### Why?
@@ -9,7 +10,7 @@ Quite simply, Express is awesome and Angular 2 is awesome, but getting them to w
  
 Install includes:
   - Express 4.0 
-  - Angular 2 
+  - Angular 2 (Updated Angular version to rc.4; routing to 3.0.0-beta.2)
   - Grunt (optional)
   - File watching and automatic browser refresh (if grunt is running)
 
