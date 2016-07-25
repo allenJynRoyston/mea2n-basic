@@ -4,51 +4,11 @@ body {
 
 a {
   color: #00B7FF;
-  text-decoration: none;
 }
 
-.space-block-10{
-  width: 100%;
-  height: 10px;
+.is-pointer{
+	cursor: pointer;
 }
-
-.space-block-25{
-  width: 100%;
-  height: 25px;
-}
-
-.space-block-50{
-    width: 100%;
-    height: 50px;
-}
-
-.space-block-100{
-    width: 100%;
-    height: 100px;
-}
-
-.full-width{
-  width: 100%!important;
-}
-
-.half-width{
-  width: 50%!important;
-}
-
-
-.cursor{
-    cursor: pointer;
-}
-
-.img-responsive{
-  width: 100%;
-  height: auto
-}
-
-.outline{
-  border: 1px dotted orange;
-}
-
 
 
 html.ios {
