@@ -1,5 +1,8 @@
 # Express / Angular 2 Easy setup
 
+### NEW FEATURES!
+July 25 2016:  Routing example included!
+
 ### Why?
 
 Quite simply, Express is awesome and Angular 2 is awesome, but getting them to work isn't as fluid as you'd think it would be.  This package eliminates all the fuss and only includes the bare basics so you can customize your project the way you like.  Think of it like a clean Windows install; all the functionality you'd want without any of the bloatware.
