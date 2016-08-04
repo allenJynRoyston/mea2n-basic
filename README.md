@@ -30,6 +30,9 @@ Required:
 
 Install instructions:
   - Clone this repo
+```sh
+git clone https://github.com/allenRoyston/Express-Angular2-Seed.git
+```
   - change to repo directory
 ```sh
 $ cd myDirectory
