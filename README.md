@@ -49,11 +49,11 @@ npm ERR! peerinvalid Peer load-grunt-tasks@3.5.0 wants grunt@>=0.4.0
 npm ERR! peerinvalid Peer grunt-concurrent@2.3.0 wants grunt@>=0.4.0
 npm ERR! peerinvalid Peer grunt-nodemon@0.4.2 wants grunt@>=0.4.0
 ```
-  - start the server with grunt (which comes preinstalled and is recommended)
+  - start the server with grunt (will autorefresh the browser when changes are made)
 ```sh
 $ grunt
 ```
-  - or simply with 
+  - or simply with (will not refresh the browser when changes are made)
 ```sh
 $ npm start
 ```
