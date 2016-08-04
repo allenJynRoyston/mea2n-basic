@@ -18,43 +18,19 @@ html
     // css
     link(rel='stylesheet', href='/stylesheets/style.css')
     
+    // angular 2 core files
+    script(src='node_modules/core-js/client/shim.min.js')
+    script(src='node_modules/zone.js/dist/zone.js')
+    script(src='node_modules/reflect-metadata/Reflect.js')
+    script(src='node_modules/systemjs/dist/system.src.js')
+    script(src='systemjs.config.js')
+    
     // production 
     if enviroment=="production" 
     
-      // system has to be loaded in this order
-      script(src='node_modules/systemjs/dist/system.src.js')
-      script(src='systemjs.config.js')
-      
-      // load other scripts here
-      script.
-        function loadScript(src) {
-          var element = document.createElement("script");
-          element.src = src;
-          document.body.appendChild(element);
-        }
-        // Add a script element as a child of the body
-        function downloadJSAtOnload() {        
-          loadScript("node_modules/core-js/client/shim.min.js");
-          loadScript("node_modules/zone.js/dist/zone.js");
-          loadScript("node_modules/reflect-metadata/Reflect.js");
-        }
-        // Check for browser support of event handling capability
-        if (window.addEventListener)
-        window.addEventListener("load", downloadJSAtOnload, false);
-        else if (window.attachEvent)
-        window.attachEvent("onload", downloadJSAtOnload);
-        else window.onload = downloadJSAtOnload;
-
-    
     // development
     if enviroment=="development"   
-    
-      script(src='node_modules/core-js/client/shim.min.js')
-      script(src='node_modules/zone.js/dist/zone.js')
-      script(src='node_modules/reflect-metadata/Reflect.js')
-      script(src='node_modules/systemjs/dist/system.src.js')
-      script(src='systemjs.config.js')
-      
+
       // livereload          
       script(src='//localhost:35729/livereload.js')  
     
