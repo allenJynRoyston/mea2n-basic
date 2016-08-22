@@ -14,12 +14,13 @@ var HomeComponent = (function () {
     }
     HomeComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: "<h2>Home</h2> "
+            selector: 'app-home',
+            directives: [],
+            templateUrl: '../../app/home/template.html'
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
     return HomeComponent;
 }());
 exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.components.js.map
+//# sourceMappingURL=home.js.map
