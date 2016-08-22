@@ -4,7 +4,8 @@
 Looking for an MEAN build with Semantic-UI already included?  [Check this repo out instead.](https://github.com/allenRoyston/mea2n-sui "MEA2N")
 
 ### NEW FEATURES!
-
+Updated to latest Angular 2 version (rc.5).
+<br>
 July 25 2016:  Routing included by default.
 
 ### Barebones Preview
